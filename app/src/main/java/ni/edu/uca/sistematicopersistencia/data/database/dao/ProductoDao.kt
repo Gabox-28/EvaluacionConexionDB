@@ -7,10 +7,10 @@ import ni.edu.uca.sistematicopersistencia.data.database.entities.EntityProducto
 @Dao
 interface ProductoDao {
     @Query("SELECT * FROM TblProducto")
-    fun obtRegistos(): Flow<List<EntityProducto>>
+    suspend fun obtenerProducto(): MutableList<EntityProducto>
 
-    @Query("SELECT * FROM TblProducto WHERE id= :id")
-    fun obtRegistro(id:Int):Flow<EntityProducto>
+    @Insert
+    suspend fun agregarProducto(entityProducto: EntityProducto)
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertarReg(producto: EntityProducto)
