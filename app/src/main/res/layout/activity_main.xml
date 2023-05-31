@@ -2,12 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvDatos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvDatos"
+        android:id="@+id/tvDatosProducto"
         android:layout_width="376dp"
         android:layout_height="175dp"
         android:layout_marginTop="424dp"
@@ -40,7 +41,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/etNombre"
         android:layout_width="329dp"
         android:layout_height="44dp"
         android:layout_marginTop="52dp"
@@ -53,7 +54,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/etPrecio"
         android:layout_width="332dp"
         android:layout_height="46dp"
         android:layout_marginTop="24dp"
@@ -63,10 +64,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.341"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/etExistencia"
         android:layout_width="334dp"
         android:layout_height="48dp"
         android:layout_marginTop="196dp"
@@ -75,6 +76,17 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:text="Agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
